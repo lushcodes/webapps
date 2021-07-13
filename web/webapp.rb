@@ -1,6 +1,8 @@
 require 'sinatra'
 require "sinatra/reloader" if development?
 
+Capybara.default_driver = :selenium
+
 get '/' do
   'hello!'
 end
